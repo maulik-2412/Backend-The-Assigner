@@ -2,7 +2,9 @@ const mongoose=require('mongoose');
 
 const UserProfileSchema=mongoose.Schema({
     name:String,
-    email:String,
+    email:{
+        type:String,
+    unique:true},
     phone:Number,
     educationalQualification:String,
     profilePic:{

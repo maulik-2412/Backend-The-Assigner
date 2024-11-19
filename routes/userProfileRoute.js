@@ -3,6 +3,8 @@ const router=express.Router();
 const userProfile=require('../controllers/userProfile.controller');
 
 
-router.post("/",userProfile);
+router.post("/",userProfile.saveUserProfile);
+
+router.get("/",userProfile.showUserProfile);
 
 module.exports=router;
