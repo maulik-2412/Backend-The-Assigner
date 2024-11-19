@@ -8,8 +8,7 @@ const UserProfileSchema=mongoose.Schema({
     phone:Number,
     educationalQualification:String,
     profilePic:{
-        data:Buffer,
-        contentType:String
+        type:Buffer
     },
     currentLocation:String,
 })
